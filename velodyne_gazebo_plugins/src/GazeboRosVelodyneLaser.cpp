@@ -95,15 +95,16 @@ GazeboRosVelodyneLaser::~GazeboRosVelodyneLaser()
 void GazeboRosVelodyneLaser::Load(sensors::SensorPtr _parent, sdf::ElementPtr _sdf)
 {
   // Load plugin
+  ROS_INFO("-------------------");
   RayPlugin::Load(_parent, _sdf);
 
   // Initialize Gazebo node
   gazebo_node_ = gazebo::transport::NodePtr(new gazebo::transport::Node());
   gazebo_node_->Init();
-
   // Get the parent ray sensor
 #if GAZEBO_MAJOR_VERSION >= 7
   parent_ray_sensor_ = std::dynamic_pointer_cast<sensors::RaySensor>(_parent);
+  ROS_INFO("Load sensor plugin : %s",parent_ray_sensor_->ScopedName().c_str());
 #else
   parent_ray_sensor_ = boost::dynamic_pointer_cast<sensors::RaySensor>(_parent);
 #endif
@@ -139,7 +140,7 @@ void GazeboRosVelodyneLaser::Load(sensors::SensorPtr _parent, sdf::ElementPtr _s
 
   min_intensity_ = std::numeric_limits<double>::lowest();
   if (!_sdf->HasElement("min_intensity")) {
-    ROS_INFO("Velodyne laser plugin missing <min_intensity>, defaults to no clipping");
+    //ROS_INFO("plugin missing <min_intensity>, defaults to no clipping");
   } else {
     min_intensity_ = _sdf->GetElement("min_intensity")->Get<double>();
   }
@@ -198,6 +199,7 @@ void GazeboRosVelodyneLaser::Load(sensors::SensorPtr _parent, sdf::ElementPtr _s
 #else
   ROS_INFO("Velodyne %slaser plugin ready, %i lasers", STR_GPU_, parent_ray_sensor_->GetVerticalRangeCount());
 #endif
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////

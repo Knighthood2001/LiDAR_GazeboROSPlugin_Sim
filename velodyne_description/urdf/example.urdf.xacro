@@ -1,11 +1,54 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="example">
-  <xacro:arg name="gpu" default="false"/>
-  <xacro:property name="gpu" value="$(arg gpu)" />
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="$(arg LiDARName)">
+  <xacro:arg name="topicName" default="LiDAR_points"/>
+  <xacro:arg name="frameName" default="lidar"/>
+  <xacro:arg name="min_range" default="0.9"/>
+  <xacro:arg name="max_range" default="130.0"/>
+  <xacro:arg name="samples" default="440"/>
+  <xacro:arg name="gaussianNoise" default="0.008"/>
+  <xacro:arg name="hz" default="10"/>
+
+  <xacro:property name="LiDARName" value="$(arg LiDARName)"/>
+  <xacro:property name="topicName" value="$(arg topicName)" />
+  <xacro:property name="frameName" value="$(arg frameName)" />
+  <xacro:property name="min_range" value="$(arg min_range)" />
+  <xacro:property name="max_range" value="$(arg max_range)" />
+  <xacro:property name="samples" default="$(arg samples)"/>
+  <xacro:property name="hz" value="$(arg hz)" />
+  <xacro:property name="gaussianNoise" value="$(arg gaussianNoise)" />
+
+
+  <xacro:include filename="$(find velodyne_description)/urdf/LiDAR-80.xacro"/>
+  <!--                          User configuartion                                          -->
+  <xacro:laserModel
+          parent="base_link"
+          name="${LiDARName}"
+          topic="${topicName}"
+          samples="${samples}"
+          noise="${gaussianNoise}"
+          hz="${hz}"
+          frame="${frameName}" >
+
+
+
+    <origin xyz="0 0 0.4" rpy="0 0 0" />
+  </xacro:laserModel>
+
+  <gazebo >
+    <plugin name="gazebo_ros_lidar_non_uniform" filename="libgazebo_ros_lidar_non_uniform.so">
+      <topicName>${topicName}</topicName>
+      <frameName>${frameName}</frameName>
+      <min_range>${min_range}</min_range>
+      <max_range>${max_range}</max_range>
+      <gaussianNoise>${gaussianNoise}</gaussianNoise>
+    </plugin>
+  </gazebo>
+
+  <!--                        User configuartion                                          -->
+
 
   <!-- Base Footprint -->
   <link name="base_footprint" />
-
   <!-- Base Link -->
   <joint name="footprint" type="fixed" >
    <parent link="base_footprint" />
@@ -32,14 +75,5 @@
     </inertial>
   </link>
 
-  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
-  <xacro:VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="440" gpu="${gpu}">
-    <origin xyz="0 0 0.4" rpy="0 0 0" />
-  </xacro:VLP-16>
-
-  <xacro:include filename="$(find velodyne_description)/urdf/HDL-32E.urdf.xacro"/>
-  <xacro:HDL-32E parent="base_link" name="velodyne2" topic="/velodyne_points2" hz="10" samples="220" gpu="${gpu}">
-    <origin xyz="0 0 0.6" rpy="0 0 0" />
-  </xacro:HDL-32E>
 
 </robot>

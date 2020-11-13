@@ -39,6 +39,15 @@ target_link_libraries(gazebo_ros_velodyne_gpu_laser
   ${GAZEBO_LIBRARIES}
   GpuRayPlugin
 )
+
+add_library(gazebo_ros_lidar_non_uniform src/GazeboRosLidarModel.cpp)
+target_link_libraries(gazebo_ros_lidar_non_uniform
+        ${catkin_LIBRARIES}
+        ${GAZEBO_LIBRARIES}
+        GpuRayPlugin
+        )
+
+
 target_compile_definitions(gazebo_ros_velodyne_gpu_laser PRIVATE GAZEBO_GPU_RAY=1)
 
 install(TARGETS gazebo_ros_velodyne_laser gazebo_ros_velodyne_gpu_laser
