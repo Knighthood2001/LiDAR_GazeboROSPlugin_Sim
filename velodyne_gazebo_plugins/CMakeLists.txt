@@ -39,21 +39,36 @@ target_link_libraries(gazebo_ros_velodyne_gpu_laser
   ${GAZEBO_LIBRARIES}
   GpuRayPlugin
 )
+target_compile_definitions(gazebo_ros_velodyne_gpu_laser PRIVATE GAZEBO_GPU_RAY=1)
 
-add_library(gazebo_ros_lidar_non_uniform src/GazeboRosLidarModel.cpp)
-target_link_libraries(gazebo_ros_lidar_non_uniform
+############################ my costom lidar plugin ############################
+add_library(gazebo_ros_custom_lidar src/GazeboRosCustomLidar.cpp)
+target_link_libraries(gazebo_ros_custom_lidar
+        ${catkin_LIBRARIES}
+        ${GAZEBO_LIBRARIES}
+        RayPlugin
+        )
+
+add_library(gazebo_ros_custom_gpu_lidar src/GazeboRosCustomLidar.cpp)
+target_link_libraries(gazebo_ros_custom_gpu_lidar
         ${catkin_LIBRARIES}
         ${GAZEBO_LIBRARIES}
         GpuRayPlugin
         )
+target_compile_definitions(gazebo_ros_custom_gpu_lidar PRIVATE GAZEBO_GPU_RAY=1)
+############################ my costom lidar plugin ############################
 
 
-target_compile_definitions(gazebo_ros_velodyne_gpu_laser PRIVATE GAZEBO_GPU_RAY=1)
+
+
 
 install(TARGETS gazebo_ros_velodyne_laser gazebo_ros_velodyne_gpu_laser
         LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 )
 
+
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
+
+

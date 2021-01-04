@@ -27,7 +27,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -58,9 +58,7 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        LiDARFrame:
-          Value: true
-        LiDAR_non-uniform:
+        Ruby80frame:
           Value: true
         base_footprint:
           Value: true
@@ -74,9 +72,8 @@ Visualization Manager:
       Tree:
         base_footprint:
           base_link:
-            LiDARFrame:
-              LiDAR_non-uniform:
-                {}
+            Ruby80frame:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -88,17 +85,12 @@ Visualization Manager:
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
-        LiDARFrame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        LiDAR_non-uniform:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         Link Tree Style: Links in Alphabetic Order
+        Ruby80frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base_footprint:
           Alpha: 1
           Show Axes: false
@@ -117,14 +109,14 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
+        Max Value: 0.9316109418869019
+        Min Value: -0.06653573364019394
         Value: true
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud2
       Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color Transformer: AxisColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -137,9 +129,9 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
-      Style: Flat Squares
-      Topic: /LiDAR_points
+      Size (m): 0.10000000149011612
+      Style: Points
+      Topic: /lidar1
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -148,7 +140,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: LiDARFrame
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -172,25 +164,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 9.598991394042969
+      Distance: 4.343262672424316
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: -0.08945536613464355
+        Y: -0.010035652667284012
+        Z: 3.887581101480464e-8
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: -0.009797601029276848
+      Pitch: 0.08020158857107162
       Target Frame: <Fixed Frame>
       Value: XYOrbit (rviz)
-      Yaw: 5.3185715675354
+      Yaw: 0.015377292409539223
     Saved: ~
 Window Geometry:
   Displays:
@@ -208,5 +200,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1200
-  X: 335
-  Y: 27
+  X: 2248
+  Y: 131

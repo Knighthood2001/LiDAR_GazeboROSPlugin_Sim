@@ -2,8 +2,11 @@
 // Created by ou on 2020/11/12.
 //
 
-#ifndef VELODYNE_GAZEBO_PLUGINS_GAZEBOROSLIDARMODEL_H
-#define VELODYNE_GAZEBO_PLUGINS_GAZEBOROSLIDARMODEL_H
+#ifndef VELODYNE_GAZEBO_PLUGINS_GAZEBOROSCUSTOMLIDAR_H
+#define VELODYNE_GAZEBO_PLUGINS_GAZEBOROSCUSTOMLIDAR_H
+#ifndef GAZEBO_GPU_RAY
+#define GAZEBO_GPU_RAY 0
+#endif
 
 //
 // Created by ou on 2020/11/12.
@@ -19,13 +22,19 @@
 #include <gazebo/common/Plugin.hh>
 #include <gazebo/sensors/sensors.hh>
 #include <gazebo/sensors/SensorTypes.hh>
+#if GAZEBO_GPU_RAY
+#include <gazebo/plugins/GpuRayPlugin.hh>
+#else
 #include <gazebo/plugins/RayPlugin.hh>
+#endif
 #include <gazebo/msgs/msgs.hh>
 #include <gazebo/msgs/laserscan_stamped.pb.h>
+
 #include <ros/ros.h>
 #include <ros/callback_queue.h>
 #include <ros/advertise_options.h>
 #include <sensor_msgs/PointCloud2.h>
+#include <sensor_msgs/JointState.h>
 
 
 
@@ -34,7 +43,15 @@
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
 #include <boost/thread/lock_guard.hpp>
+
+#if GAZEBO_GPU_RAY
+#define GazeboRosVelodyneLaser GazeboRosVelodyneGpuLaser
+#define RayPlugin GpuRayPlugin
+#define RaySensorPtr GpuRaySensorPtr
+#endif
+
 using namespace std;
+
 namespace gazebo
 {
     class GazeboRosMultiLaser;
@@ -64,9 +81,12 @@ namespace gazebo
         void OnScan(const ConstLaserScanStampedPtr &_msg,int topic_idx);
         ConnectHelper<gazebo::msgs::LaserScanStamped> CntHelper[5];
         event::ConnectionPtr updateConnection;
+        string linkname;
+        int gazebo_lidar_miss_cnt;
 
     private:
-        ros::Publisher ros_pub_;
+        string ns;
+        ros::Publisher ros_pub_,joint_state_pub;
         string ros_pub_topic_name_;
         ros::NodeHandle* nh_;
         ros::CallbackQueue laser_queue_;
@@ -74,6 +94,7 @@ namespace gazebo
         int totalLidarPoints=0;
         const uint32_t POINT_STEP = 22;
         sensor_msgs::PointCloud2 msg;
+        sensor_msgs::JointState jsmsg;
     private:
         boost::mutex lock_;
         void laserQueueThread();
@@ -82,21 +103,13 @@ namespace gazebo
         vector<gazebo::sensors::RaySensorPtr> multlaser;
         string frame_name_;
         double min_intensity_;
-        double gaussian_noise_;
         double min_range_;
         double max_range_;
         string robotscope;
-        static double gaussianKernel(double mu, double sigma){
-            // using Box-Muller transform to generate two independent standard normally distributed normal variables
-            // see wikipedia
-            double U = (double)rand() / (double)RAND_MAX; // normalized uniform random variable
-            double V = (double)rand() / (double)RAND_MAX; // normalized uniform random variable
-            return sigma * (sqrt(-2.0 * ::log(U)) * cos(2.0 * M_PI * V)) + mu;
-        }
     };
 
 
     // Register this plugin with the simulator
     GZ_REGISTER_MODEL_PLUGIN(GazeboRosMultiLaser)
 }
-#endif //VELODYNE_GAZEBO_PLUGINS_GAZEBOROSLIDARMODEL_H
+#endif //VELODYNE_GAZEBO_PLUGINS_GAZEBOROSCUSTOMLIDAR_H

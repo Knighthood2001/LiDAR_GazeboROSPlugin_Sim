@@ -64,3 +64,5 @@ launch：23-24lines
 
 
 
+注意事项1：被依附的link必须具有inertial属性，否则有被sdf合并优化掉。
+

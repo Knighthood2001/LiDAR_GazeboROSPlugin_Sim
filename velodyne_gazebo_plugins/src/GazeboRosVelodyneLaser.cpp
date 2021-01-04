@@ -365,6 +365,7 @@ void GazeboRosVelodyneLaser::OnScan(ConstLaserScanStampedPtr& _msg)
   msg.is_bigendian = false;
   msg.is_dense = true;
   msg.data.resize(msg.row_step); // Shrink to actual size
+  msg.data.resize(msg.row_step); // Shrink to actual size
 
   // Publish output
   pub_.publish(msg);
