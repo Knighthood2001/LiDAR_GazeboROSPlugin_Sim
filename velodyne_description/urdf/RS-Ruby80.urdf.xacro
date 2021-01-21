@@ -61,15 +61,15 @@
   samples:=1800      noise:=0.008
   min_range:=1    max_range:=230.0
   ">
-    <joint name="${parent}_${frame}_fixed_joint"  type="revolute">
+    <joint name="${ns}_${parent}_${frame}_fixed_joint"  type="revolute">
       <xacro:insert_block name="origin" />
       <parent link="${parent}" />
-      <child link="${frame}" />
+      <child link="${ns}_${frame}" />
       <axis xyz="0 0 1"/>
       <limit  lower="-1e-5" upper="1e-5" effort="1e-5" velocity="1e-5" />
     </joint>
 
-    <link name="${frame}">
+    <link name="${ns}_${frame}">
       <inertial>
         <mass value="3.75"/>
         <origin xyz="-0.0443 0 0.00625" rpy="0 0 0"/>
@@ -102,14 +102,14 @@
     <gazebo >
       <plugin name="${lib}" filename="lib${lib}.so">
         <topicName>${topic}</topicName>
-        <frameName>${frame}</frameName>
+        <frameName>${ns}_${frame}</frameName>
         <namespace>${ns}</namespace>
         <min_range>${min_range}</min_range>
         <max_range>${max_range}</max_range>
       </plugin>
     </gazebo>
 
-    <gazebo reference="${frame}">
+    <gazebo reference="${ns}_${frame}">
       <xacro:LiDARSensorGen name="sensor-sector" suffix="1"
                             visualize="${visualize}" hz="${hz}" gpu="${gpu}" noise="0.008"
 

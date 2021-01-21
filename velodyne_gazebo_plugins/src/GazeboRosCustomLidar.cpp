@@ -125,7 +125,7 @@ namespace gazebo {
         }
 
 
-        nh_ = new ros::NodeHandle(/*robot_namespace*/);
+        nh_ = new ros::NodeHandle(ns);
         ROS_INFO("ROS topic name : %s", ros_pub_topic_name_.c_str());
         if (ros_pub_topic_name_ != "") {
             ros::AdvertiseOptions ao = ros::AdvertiseOptions::create<sensor_msgs::PointCloud2>(

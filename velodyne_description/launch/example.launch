@@ -16,15 +16,20 @@
     <arg name="debug" value="$(arg debug)"/>
     <arg name="verbose" value="$(arg verbose)"/>
   </include>
-
   <!-- Spawn the example robot -->
-  <arg name="LiDARName" default="LiDAR_non-uniform"/>
-  <arg name="LiDARFrame" default="LiDARFrame"/>
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find velodyne_description)/urdf/example.urdf.xacro' "/>
-  <node pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -param /robot_description -model example -x 0 -y 0 -z 0"/>
-  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
-    <param name="publish_frequency" type="double" value="30.0" />
-  </node>
+  <include file="$(find velodyne_description)/launch/spawn_model.launch">
+    <arg name="group_ns" value="robot1"/>
+    <arg name="x" default="1"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0"/>
+  </include>
+  <include file="$(find velodyne_description)/launch/spawn_model.launch">
+    <arg name="group_ns" value="robot2"/>
+    <arg name="x" default="-1"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0"/>
+  </include>
+
 
   <!-- RViz -->
   <arg name="rviz" default="true"/>

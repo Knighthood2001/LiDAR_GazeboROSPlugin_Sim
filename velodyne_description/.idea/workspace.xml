@@ -7,15 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074ccd3-941d-4ffb-a84b-b24e003b3835" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/launch/spawn_model.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/example.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/example.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rviz/example.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/rviz/example.rviz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/LiDAR-80.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/urdf/LiDAR-80.urdf.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/backup.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/example.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/example.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urdf/RS-Ruby80.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/urdf/RS-Ruby80.urdf.xacro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/urdf/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/urdf/example.urdf.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/excavator.xacro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/CTestConfiguration.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/CTestConfiguration.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/atomic_configure/.rosinstall" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/atomic_configure/.rosinstall" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/atomic_configure/local_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/atomic_configure/local_setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/atomic_configure/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/atomic_configure/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/velodyne_gazebo_plugins.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/velodyne_gazebo_plugins.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/src/GazeboRosCustomLidar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/src/GazeboRosCustomLidar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +34,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1m0wPYZmMKB0TOgEr3uFMhjJt87" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,11 +100,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="CMake Application._catkin_empty_exported_target" />
       <item itemvalue="CMake Application.clean_test_results" />
@@ -144,6 +147,19 @@
       <workItem from="1609054849533" duration="599000" />
       <workItem from="1609127066790" duration="48000" />
       <workItem from="1609749411506" duration="4067000" />
+      <workItem from="1610072198460" duration="267000" />
+      <workItem from="1610334856651" duration="692000" />
+      <workItem from="1610347179898" duration="1332000" />
+      <workItem from="1610355751836" duration="201000" />
+      <workItem from="1610358207232" duration="12000" />
+      <workItem from="1610359995915" duration="1094000" />
+      <workItem from="1610418891345" duration="3000" />
+      <workItem from="1610422112879" duration="1000" />
+      <workItem from="1610427867312" duration="596000" />
+      <workItem from="1610430344030" duration="23000" />
+      <workItem from="1610790855884" duration="712000" />
+      <workItem from="1610982993500" duration="411000" />
+      <workItem from="1611201029677" duration="2931000" />
     </task>
     <servers />
   </component>
