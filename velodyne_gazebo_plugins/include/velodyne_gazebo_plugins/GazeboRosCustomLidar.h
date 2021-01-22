@@ -101,7 +101,7 @@ namespace gazebo
         boost::thread callback_laser_queue_thread_;
     private:
         vector<gazebo::sensors::RaySensorPtr> multlaser;
-        string frame_name_;
+        string frame_name_,lidar_frame_name_;
         double min_intensity_;
         double min_range_;
         double max_range_;

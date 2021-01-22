@@ -136,6 +136,8 @@ namespace gazebo {
             ros_pub_ = nh_->advertise(ao);
         }
 
+
+
         /*为伪装为fixed*/
         joint_state_pub = nh_->advertise<sensor_msgs::JointState>("joint_states", 50);
         gazebo::physics::LinkPtr link = this->model->GetLink(frame_name_);
@@ -155,6 +157,15 @@ namespace gazebo {
          */
         callback_laser_queue_thread_ = boost::thread(
                 boost::bind(&GazeboRosMultiLaser::laserQueueThread, this));
+
+        std::string prefix;
+        if (ns != "/") {
+            prefix = ns;
+        }
+        boost::trim_right_if(prefix, boost::is_any_of("/"));
+        lidar_frame_name_ = tf::resolve(prefix, frame_name_);
+        ROS_INFO("%s",lidar_frame_name_.c_str());
+
         ROS_INFO("LiDAR plugin loaded");
     }
 
@@ -173,7 +184,7 @@ namespace gazebo {
                 }
                 multlaser[i]->SetActive(true);
             }
-            msg.header.frame_id = frame_name_;
+            msg.header.frame_id = lidar_frame_name_;
             msg.point_step = POINT_STEP;
             /* resize data  */
             totalLidarPoints = 0;

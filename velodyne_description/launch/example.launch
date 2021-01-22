@@ -19,17 +19,17 @@
   <!-- Spawn the example robot -->
   <include file="$(find velodyne_description)/launch/spawn_model.launch">
     <arg name="group_ns" value="robot1"/>
-    <arg name="x" default="1"/>
-    <arg name="y" default="0"/>
-    <arg name="z" default="0"/>
-  </include>
-  <include file="$(find velodyne_description)/launch/spawn_model.launch">
-    <arg name="group_ns" value="robot2"/>
-    <arg name="x" default="-1"/>
-    <arg name="y" default="0"/>
-    <arg name="z" default="0"/>
+    <arg name="x" value="1"/>
+    <arg name="y" value="0"/>
+    <arg name="z" value="0"/>
   </include>
 
+  <include file="$(find velodyne_description)/launch/spawn_model.launch">
+    <arg name="group_ns" value="robot2"/>
+    <arg name="x" value="-1"/>
+    <arg name="y" value="0"/>
+    <arg name="z" value="0"/>
+  </include>
 
   <!-- RViz -->
   <arg name="rviz" default="true"/>

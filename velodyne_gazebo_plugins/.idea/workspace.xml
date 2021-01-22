@@ -91,22 +91,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f6183fc-23bf-4b6d-8636-645aa58021e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../velodyne_description/launch/spawn_model.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_description/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../velodyne_description/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../velodyne_description/launch/example.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/launch/example.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_description/rviz/example.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/rviz/example.rviz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_description/urdf/RS-Ruby80.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/urdf/RS-Ruby80.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../velodyne_description/launch/spawn_model.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/launch/spawn_model.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../velodyne_description/urdf/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_description/urdf/example.urdf.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CTestConfiguration.ini" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CTestConfiguration.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atomic_configure/.rosinstall" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atomic_configure/.rosinstall" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atomic_configure/local_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atomic_configure/local_setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/atomic_configure/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/atomic_configure/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/velodyne_gazebo_plugins.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/velodyne_gazebo_plugins.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/velodyne_gazebo_plugins/GazeboRosCustomLidar.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/velodyne_gazebo_plugins/GazeboRosCustomLidar.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GazeboRosCustomLidar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GazeboRosCustomLidar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GazeboRosVelodyneLaser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GazeboRosVelodyneLaser.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +127,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
   </component>
   <component name="RunManager" selected="CMake Application.actionlib_generate_messages_cpp">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_gazebo_plugins" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -539,11 +527,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
       <item itemvalue="CMake Application.actionlib_generate_messages_eus" />
@@ -662,6 +645,8 @@
       <workItem from="1609127067854" duration="639000" />
       <workItem from="1609752132207" duration="615000" />
       <workItem from="1611201674194" duration="1956000" />
+      <workItem from="1611205816761" duration="1717000" />
+      <workItem from="1611320794283" duration="1336000" />
     </task>
     <servers />
   </component>
