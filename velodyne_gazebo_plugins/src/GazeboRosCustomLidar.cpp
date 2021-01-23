@@ -57,8 +57,9 @@ namespace gazebo {
             ns = "/";
         } else {
             ns = _sdf->GetElement("namespace")->Get<string>();
+            ns = ns.empty() ? "/" : ns;
         }
-
+        ROS_INFO("<namespace> %s", ns.c_str());
         if (!_sdf->HasElement("min_range")) {
             ROS_INFO("laser plugin missing <min_range>, defaults to 0");
             min_range_ = 0;
@@ -125,7 +126,7 @@ namespace gazebo {
         }
 
 
-        nh_ = new ros::NodeHandle(ns);
+        nh_ = ns == "/" ? new ros::NodeHandle() : new ros::NodeHandle(ns);
         ROS_INFO("ROS topic name : %s", ros_pub_topic_name_.c_str());
         if (ros_pub_topic_name_ != "") {
             ros::AdvertiseOptions ao = ros::AdvertiseOptions::create<sensor_msgs::PointCloud2>(
@@ -164,7 +165,7 @@ namespace gazebo {
         }
         boost::trim_right_if(prefix, boost::is_any_of("/"));
         lidar_frame_name_ = tf::resolve(prefix, frame_name_);
-        ROS_INFO("%s",lidar_frame_name_.c_str());
+        ROS_INFO("%s", lidar_frame_name_.c_str());
 
         ROS_INFO("LiDAR plugin loaded");
     }

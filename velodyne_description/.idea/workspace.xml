@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="velodyne_description" targetName="doxygen" />
+      <config projectName="velodyne_description" targetName="gtest" />
+      <config projectName="velodyne_description" targetName="clean_test_results" />
+      <config projectName="velodyne_description" targetName="gmock_main" />
+      <config projectName="velodyne_description" targetName="tests" />
+      <config projectName="velodyne_description" targetName="run_tests" />
+      <config projectName="velodyne_description" targetName="gtest_main" />
+      <config projectName="velodyne_description" targetName="_catkin_empty_exported_target" />
+      <config projectName="velodyne_description" targetName="download_extra_data" />
+      <config projectName="velodyne_description" targetName="gmock" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
@@ -7,16 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074ccd3-941d-4ffb-a84b-b24e003b3835" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch/example.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/example.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch/spawn_model.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/spawn_model.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/RS-Ruby80.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/urdf/RS-Ruby80.urdf.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urdf/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/urdf/example.urdf.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosCustomLidar.h" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosCustomLidar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/src/GazeboRosCustomLidar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/src/GazeboRosCustomLidar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/config/annodate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/config/annodate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotate_display.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotate_display.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotation_marker.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotation_marker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/src/annotate_display.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/src/annotate_display.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/src/annotation_marker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/src/annotation_marker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/launch/example.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/launch/example.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/models/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/models/example.urdf.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +40,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="ProjectId" id="1m0wPYZmMKB0TOgEr3uFMhjJt87" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -156,7 +168,11 @@
       <workItem from="1611201029677" duration="2931000" />
       <workItem from="1611204087830" duration="3000000" />
       <workItem from="1611207551950" duration="390000" />
-      <workItem from="1611320798174" duration="1314000" />
+      <workItem from="1611320798174" duration="2170000" />
+      <workItem from="1611409835267" duration="1962000" />
+      <workItem from="1611412166966" duration="2000" />
+      <workItem from="1611412239434" duration="2310000" />
+      <workItem from="1611421523814" duration="553000" />
     </task>
     <servers />
   </component>
