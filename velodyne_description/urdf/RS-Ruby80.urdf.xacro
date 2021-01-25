@@ -64,12 +64,12 @@
         <joint name="${parent}_${frame}_fixed_joint" type="revolute">
             <xacro:insert_block name="origin"/>
             <parent link="${parent}"/>
-            <child link="${frame}"/>
+            <child link="${ns}/${frame}"/>
             <axis xyz="0 0 1"/>
             <limit lower="-1e-5" upper="1e-5" effort="1e-5" velocity="1e-5"/>
         </joint>
 
-        <link name="${frame}">
+        <link name="${ns}/${frame}">
             <inertial>
                 <mass value="3.75"/>
                 <origin xyz="0 0 0" rpy="0 0 0"/>

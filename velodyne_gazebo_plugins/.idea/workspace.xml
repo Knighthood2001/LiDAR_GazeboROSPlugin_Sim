@@ -13,6 +13,7 @@
       <config projectName="velodyne_gazebo_plugins" targetName="trajectory_msgs_generate_messages_cpp" />
       <config projectName="velodyne_gazebo_plugins" targetName="std_srvs_generate_messages_py" />
       <config projectName="velodyne_gazebo_plugins" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="velodyne_gazebo_plugins" targetName="gazebo_ros_customized_gpu_lidar" />
       <config projectName="velodyne_gazebo_plugins" targetName="tf2_msgs_generate_messages_eus" />
       <config projectName="velodyne_gazebo_plugins" targetName="dynamic_reconfigure_generate_messages_nodejs" />
       <config projectName="velodyne_gazebo_plugins" targetName="dynamic_reconfigure_generate_messages_lisp" />
@@ -29,6 +30,7 @@
       <config projectName="velodyne_gazebo_plugins" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="velodyne_gazebo_plugins" targetName="gazebo_msgs_generate_messages_nodejs" />
       <config projectName="velodyne_gazebo_plugins" targetName="gazebo_msgs_generate_messages_py" />
+      <config projectName="velodyne_gazebo_plugins" targetName="gazebo_ros_customized_lidar" />
       <config projectName="velodyne_gazebo_plugins" targetName="roscpp_generate_messages_eus" />
       <config projectName="velodyne_gazebo_plugins" targetName="std_srvs_generate_messages_nodejs" />
       <config projectName="velodyne_gazebo_plugins" targetName="geometry_msgs_generate_messages_lisp" />
@@ -92,13 +94,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0f6183fc-23bf-4b6d-8636-645aa58021e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/config/annodate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/config/annodate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/display.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/display.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/joint_names_excavator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/joint_names_excavator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/launch/gazebo_models.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/launch/gazebo_models.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../pointcloud_process/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../pointcloud_process/config/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotate_display.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotate_display.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotation_marker.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotation_marker.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/src/annotate_display.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/src/annotate_display.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/src/annotation_marker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/src/annotation_marker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/launch/example.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/launch/example.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/models/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/models/example.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/config/display.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/config/display.rviz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +126,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/include/velodyne_gazebo_plugins" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/velodyne_gazebo_plugins" />
+    </key>
   </component>
   <component name="RunManager" selected="CMake Application.actionlib_generate_messages_cpp">
     <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_gazebo_plugins" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
@@ -252,6 +260,16 @@
       </method>
     </configuration>
     <configuration name="gazebo_ros_custom_lidar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_gazebo_plugins" TARGET_NAME="gazebo_ros_custom_lidar" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gazebo_ros_customized_gpu_lidar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_gazebo_plugins" TARGET_NAME="gazebo_ros_customized_gpu_lidar" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gazebo_ros_customized_lidar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="velodyne_gazebo_plugins" TARGET_NAME="gazebo_ros_customized_lidar" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -526,6 +544,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
       <item itemvalue="CMake Application.actionlib_generate_messages_eus" />
@@ -553,6 +576,8 @@
       <item itemvalue="CMake Application.gazebo_msgs_generate_messages_py" />
       <item itemvalue="CMake Application.gazebo_ros_custom_gpu_lidar" />
       <item itemvalue="CMake Application.gazebo_ros_custom_lidar" />
+      <item itemvalue="CMake Application.gazebo_ros_customized_gpu_lidar" />
+      <item itemvalue="CMake Application.gazebo_ros_customized_lidar" />
       <item itemvalue="CMake Application.gazebo_ros_gencfg" />
       <item itemvalue="CMake Application.gazebo_ros_velodyne_gpu_laser" />
       <item itemvalue="CMake Application.gazebo_ros_velodyne_laser" />
@@ -650,6 +675,8 @@
       <workItem from="1611412178425" duration="1016000" />
       <workItem from="1611421486106" duration="592000" />
       <workItem from="1611422098078" duration="122000" />
+      <workItem from="1611545494481" duration="18727000" />
+      <workItem from="1611618506300" duration="1827000" />
     </task>
     <servers />
   </component>
