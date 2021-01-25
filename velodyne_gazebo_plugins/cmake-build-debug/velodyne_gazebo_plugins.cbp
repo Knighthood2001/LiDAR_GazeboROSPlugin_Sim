@@ -37,6 +37,96 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="gazebo_ros_customized_gpu_lidar">
+				<Option output="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/devel/lib/libgazebo_ros_customized_gpu_lidar.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGAZEBO_GPU_RAY=1"/>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;velodyne_gazebo_plugins&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/include"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 gazebo_ros_customized_gpu_lidar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gazebo_ros_customized_gpu_lidar/fast">
+				<Option output="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/devel/lib/libgazebo_ros_customized_gpu_lidar.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGAZEBO_GPU_RAY=1"/>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;velodyne_gazebo_plugins&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/include"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 gazebo_ros_customized_gpu_lidar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="gazebo_ros_custom_gpu_lidar">
 				<Option output="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/devel/lib/libgazebo_ros_custom_gpu_lidar.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug"/>
@@ -578,6 +668,94 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gazebo_ros_customized_lidar">
+				<Option output="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/devel/lib/libgazebo_ros_customized_lidar.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;velodyne_gazebo_plugins&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/include"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 gazebo_ros_customized_lidar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gazebo_ros_customized_lidar/fast">
+				<Option output="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/devel/lib/libgazebo_ros_customized_lidar.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;velodyne_gazebo_plugins&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add option="-DLIBBULLET_VERSION=2.87"/>
+					<Add option="-DLIBBULLET_VERSION_GT_282"/>
+					<Add directory="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/include"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/gazebo-9"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/simbody"/>
+					<Add directory="/usr/include/sdformat-6.2"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/OGRE/Terrain"/>
+					<Add directory="/usr/include/OGRE/Paging"/>
+					<Add directory="/usr/include/ignition/math4"/>
+					<Add directory="/usr/include/ignition/transport4"/>
+					<Add directory="/usr/include/ignition/msgs1"/>
+					<Add directory="/usr/include/ignition/common1"/>
+					<Add directory="/usr/include/ignition/fuel_tools1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 gazebo_ros_customized_lidar/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1380,6 +1558,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboROSCostomizedLiDAR.cpp">
+			<Option target="gazebo_ros_customized_gpu_lidar"/>
+			<Option target="gazebo_ros_customized_lidar"/>
+		</Unit>
 		<Unit filename="/home/ou/workspace/ros_ws/ironworks_ws/src/gazebo_simulation/lidar_simulation/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosCustomLidar.cpp">
 			<Option target="gazebo_ros_custom_gpu_lidar"/>
 			<Option target="gazebo_ros_custom_lidar"/>

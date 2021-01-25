@@ -9,8 +9,8 @@
       <config projectName="velodyne_description" targetName="tests" />
       <config projectName="velodyne_description" targetName="run_tests" />
       <config projectName="velodyne_description" targetName="gtest_main" />
-      <config projectName="velodyne_description" targetName="_catkin_empty_exported_target" />
       <config projectName="velodyne_description" targetName="download_extra_data" />
+      <config projectName="velodyne_description" targetName="_catkin_empty_exported_target" />
       <config projectName="velodyne_description" targetName="gmock" />
     </generated>
   </component>
@@ -22,13 +22,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f074ccd3-941d-4ffb-a84b-b24e003b3835" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_description/urdf/excavator.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/config/annodate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/config/annodate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/display.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/display.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/joint_names_excavator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/config/joint_names_excavator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/launch/gazebo_models.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../robot_simulation/robot_gazebo/launch/gazebo_models.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotate_display.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotate_display.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotation_marker.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/include/annotate/annotation_marker.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/src/annotate_display.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/src/annotate_display.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../tools/annotate/src/annotation_marker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/annotate/src/annotation_marker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/launch/example.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/launch/example.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/models/example.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/models/example.urdf.xacro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../tools/my_annotate/config/display.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tools/my_annotate/config/display.rviz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +106,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application._catkin_empty_exported_target" />
       <item itemvalue="CMake Application.clean_test_results" />
@@ -173,6 +178,10 @@
       <workItem from="1611412166966" duration="2000" />
       <workItem from="1611412239434" duration="2310000" />
       <workItem from="1611421523814" duration="553000" />
+      <workItem from="1611501041455" duration="1499000" />
+      <workItem from="1611545508203" duration="15173000" />
+      <workItem from="1611584575798" duration="77000" />
+      <workItem from="1611618507551" duration="374000" />
     </task>
     <servers />
   </component>
